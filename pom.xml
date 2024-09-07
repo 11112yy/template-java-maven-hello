@@ -16,10 +16,11 @@
     <dependencies>
         <!-- SQLite -->
         <!-- <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
             <version>3.42.0.0</version>
         </dependency> -->
+        
     </dependencies>
 
     <build>

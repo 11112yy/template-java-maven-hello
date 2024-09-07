@@ -6,7 +6,8 @@ vscode:
     - vscjava.vscode-java-dependency
     - vscjava.vscode-java-test
     - redhat.java
-
+image:
+  file: .gitpod.Dockerfile
 tasks:
   - name: java project build with maven
     before: |
@@ -17,4 +18,6 @@ tasks:
       mvn install -DskipTests=false
     command: |
       mvn compile
+      echo "Starting MySQL..."
+      docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=testdb -p 3306:3306 -d mysql:latest
 

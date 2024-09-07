@@ -93,7 +93,7 @@ public class Menu<E> {
                     }
                 }
                 if (flag) {
-                    System.out.println("抱歉，您不能进入系统");
+                    System.out.println("报错");
                     filestorage.close();
                     System.exit(0);
                 }
@@ -200,7 +200,7 @@ public class Menu<E> {
             } else if (str.equals("n"))
                 break;
             else
-                System.out.println("您输入的密码格式错误");
+                System.out.println("您输入错误");
         } while (true);
     }
 
@@ -232,13 +232,13 @@ public class Menu<E> {
                     }
                     int amount;
                     do {
-                        System.out.print("您要将该商品在购物车中设置为多少");
+                        System.out.print("请将该商品在购物车中设置完善");
                         String a = scanner.next();
                         if (a.matches("[\\d]+")) {
                             amount = Integer.parseInt(a);
                             break;
                         } else
-                            System.out.println("您输入的不是纯数字，请重试");
+                            System.out.println("您的输入非纯数字，请重试");
                     } while (true);
                     if (amount <= 0) {
                         System.out.println("您将清空购物车中的该商品，请考虑清楚");
@@ -600,7 +600,7 @@ public class Menu<E> {
                                 goods.amount = a;
                                 System.out.println("修改成功");
                             } else if (s1.equals("9")) {
-                                System.out.println("请确认是否继续删除该商品信息,按1继续删除，其他任意键返回");
+                                System.out.println("请确认是否继续删除该商品信息,若删除请按1，其他任意键返回");
                                 if (scanner.next().equals("1")) {
                                     list2.remove(i);
                                     System.out.println("删除成功");

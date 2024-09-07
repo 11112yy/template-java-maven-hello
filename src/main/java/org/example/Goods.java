@@ -9,7 +9,6 @@ public class Goods implements Serializable{
     String name;        		      //商品名称
     String factory;      		  //生产厂家
     String manufactureDate;        //生产日期
-    String type;       		 	  //型号
     double purchasingPrice;		  //采购价
     double retailPrice;   	      //零售价
     int amount;				      //商品数量
@@ -23,7 +22,6 @@ public class Goods implements Serializable{
         this.name=n;
         this. factory=f;
         this. manufactureDate=m;
-        this. type=t;
         this. purchasingPrice=p;
         this. retailPrice=r;
         this. amount=a;
@@ -35,7 +33,6 @@ public class Goods implements Serializable{
         System.out.println("商品名称:"+name);
         System.out.println("生产厂家:"+factory);
         System.out.println("生产日期:"+manufactureDate);
-        System.out.println("型号:"+type);
         System.out.println("进货价:"+purchasingPrice);
         System.out.println("零售价:"+retailPrice);
         System.out.println("数量:"+amount);

@@ -175,10 +175,9 @@ public class FileStorage<E> extends BaseFileStorage<E> {
         row.createCell(1).setCellValue("商品名称");
         row.createCell(2).setCellValue("生产厂家");
         row.createCell(3).setCellValue("生产日期");
-        row.createCell(4).setCellValue("型号");
-        row.createCell(5).setCellValue("进货价");
-        row.createCell(6).setCellValue("零售价");
-        row.createCell(7).setCellValue("数量");
+        row.createCell(4).setCellValue("进价");
+        row.createCell(5).setCellValue("零售价");
+        row.createCell(6).setCellValue("数量");
 
         for(int i = 0; i < getList2().size(); i++) {
             Goods goods = getList2().get(i);
@@ -188,10 +187,9 @@ public class FileStorage<E> extends BaseFileStorage<E> {
             row.createCell(1).setCellValue(goods.name);
             row.createCell(2).setCellValue(goods.factory);
             row.createCell(3).setCellValue(goods.manufactureDate);
-            row.createCell(4).setCellValue(goods.type);
-            row.createCell(5).setCellValue(goods.purchasingPrice);
-            row.createCell(6).setCellValue(goods.retailPrice);
-            row.createCell(7).setCellValue(goods.amount);
+            row.createCell(4).setCellValue(goods.purchasingPrice);
+            row.createCell(5).setCellValue(goods.retailPrice);
+            row.createCell(6).setCellValue(goods.amount);
         }
 
         try {
